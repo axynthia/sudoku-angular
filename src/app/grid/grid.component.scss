@@ -1,0 +1,27 @@
+:host {
+  height: 750px;
+  width: 750px;
+
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+
+  border: 2px solid grey;
+
+  >.field {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+
+    border: 2px solid grey;
+
+    >.item {
+      border: 1px dashed grey;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      >.value {
+      }
+    }
+  }
+}
